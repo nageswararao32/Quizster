@@ -1,38 +1,162 @@
-.App {
-  text-align: center;
+.div1:hover {
+    transform: scale(1.1);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.btn:hover {
+    transform: scale(1.1);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.mainDiv {
+    background-color: #f9f9f9;
+    display: flex;
+    overflow: hidden;
+}
+
+.btn1:hover {
+    transform: scale(1.1);
+    color: aqua;
+}
+
+.sideBar {
+    background-color: #f9f9f9;
+    height: auto;
+    width: 200px;
+    overflow: hidden;
+}
+
+.sidebar {
+    width: 150px;
+    height: 100%;
+    position: sticky;
+    top: 0;
+    left: -250px;
+    background-color: #f9f9f9;
+    transition: left 0.3s;
+    height:400px;
+    margin: 20px;
+    overflow: scroll;
+}
+
+.sidebar-menu {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar-menu li {
+    color: whitesmoke;
+    cursor: pointer;
+    padding: 10px;
+    width:50px;
+    height:50px;
+    border-radius: 80%;
+    background-color: gray;
+    font-size: 50px;
+    font-weight: 30px;
+    text-align: center;
+    position:sticky;
+}
+.abc{
+    margin: 20px;
+    padding: auto;
+}
+.sidebar-menu li:hover {
+    background-color: springgreen;
+    color: yellow;
+}
+
+.options {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    cursor: pointer;
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    text-wrap: wrap;
+    position:static;
+}
+
+.sidebar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+.sidebar::-webkit-scrollbar {
+    display: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.abc{
+    text-align: center;
+}
+.sidebar-menu, .options {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+.sidebar-menu::-webkit-scrollbar {
+    display: none;
+}
+
+.mainDiv, .abc {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+.mainDiv::-webkit-scrollbar {
+    display: none;
+}
+
+@keyframes blink {
+    0%, 50% {
+      opacity: 1;
+    }
+    51%, 100% {
+      opacity: 0;
+    }
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  .blink {
+    animation: blink 1s step-end infinite;
+    color: blue;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   }
-  to {
-    transform: rotate(360deg);
-  }
+  
+
+
+/*
+.prevBut{
+    width:250px;
+    height:50px;
+    background-color:orchid;
+    color:white;
+    font-family:sans-serif; 
+    font-size:18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
 }
+
+
+.nextBut{
+    width:250px;
+    height:50px;
+    background-color:mediumaquamarine;
+    border: none;
+    color:white;
+    font-family:sans-serif; 
+    font-size:18px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+*/
